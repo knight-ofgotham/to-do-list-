@@ -1,0 +1,75 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="todolist2.css">
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+</head>
+<body>
+    <div class="big x-content display relative">
+        <div x-data="{ showTaskList: true, showAddTask: false }" class="container-1  display y-content column absolute show ">
+            <div class="search-bar  y-content column  display">
+                <h2 class="font color">Task List</h2>
+                <input class="search-input color" type="text" placeholder="search here">
+            </div>
+            <div class="task-list column display" >
+                <h2 class="font  padding">Tasks</h2>
+                <img class="img-1" src="images/sort-descending (1).png" alt="" width="30">
+
+                <div class="task-input column display">
+                    <h3 class="font padding">Trx First Train</h3>
+                    <h3 class="font padding">Meditation</h3>
+                    <h3 class="font padding">Desiging</h3>
+                    <h3 class="font padding">Typing practice</h3>
+                    <h3 class="font padding">Workout</h3>
+                </div>
+                <div @click="showAddTask = true" class="start font">Start</div>
+                <img class="img-2" src="images/right-arrow.png" alt=""  width="30px"> 
+            </div>
+
+
+            <div class="box-2  display column y-content">
+                <h2 class="font color">ADD New Task</h2>
+                <div class="input-boxes">       
+                    <h4 class="font color padding">*Name</h4>
+                    <input class="margin-left font inputs padding" type="text" placeholder="Give Task Name">
+                    <h4 class="font color padding">Date</h4>
+                    <input class="margin-left font inputs padding" type="text" placeholder="Set Task Date">
+                    <h4 class="font color padding">Eastimated Length</h4>
+                    <input class="margin-left font inputs padding" type="text" placeholder="Set Task Length">
+                    <h4 class="font color padding">Description</h4>
+                    <input class="margin-left font inputs padding" type="text" placeholder="Describe the task">
+                    <h4 class="font color padding">Tags</h4>
+                    <input class="margin-left font inputs padding" type="text" placeholder="Select Tags">
+                </div> 
+                <div @click="showAddTask = false" class="add-task color font">Add</div>
+                <img  class="img-3" src="images/plus.png" alt="" width="25px">
+            </div>
+        </div>
+
+
+
+        <div class="boxes-1"></div>
+        <div class="box-3 display hide column ">
+            <div class="circle-1 font">Typing Practice </div>
+            <div class="circle-2"></div>
+            <div class="completed color font padding margin-left">  Completed</div>
+            <img class="img-4" src="images/arrow.png" alt="" width="30px">
+        </div>
+        <div class="boxes-2"></div>
+       
+
+    </div>
+
+
+                                                               
+
+    <script>
+        
+
+    </script>
+</body>
+
+</html>
